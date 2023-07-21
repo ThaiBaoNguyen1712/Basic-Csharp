@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE2FF919-3D7D-4B8D-AFF9-8B35CCEFCE35}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DoAn_NguyenThaiBao_K17CNTT</RootNamespace>
+    <AssemblyName>DoAn_NguyenThaiBao_K17CNTT</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FrmprintLoaiSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmprintLoaiSP.Designer.cs">
+      <DependentUpon>FrmprintLoaiSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrint_KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrint_KhachHang.Designer.cs">
+      <DependentUpon>FrmPrint_KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrint_NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrint_NhanVien.Designer.cs">
+      <DependentUpon>FrmPrint_NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrint_SanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrint_SanPham.Designer.cs">
+      <DependentUpon>FrmPrint_SanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print_HD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Print_HD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FrmChiTietHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChiTietHoaDon.Designer.cs">
+      <DependentUpon>FrmChiTietHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHoaDon.Designer.cs">
+      <DependentUpon>FrmHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKhachHang.Designer.cs">
+      <DependentUpon>FrmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNhanVien.Designer.cs">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrint.Designer.cs">
+      <DependentUpon>FrmPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSanPham.Designer.cs">
+      <DependentUpon>FrmSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoaiSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoaiSP.Designer.cs">
+      <DependentUpon>LoaiSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhanQuyen.cs" />
+    <Compile Include="DoAnTBao.cs">
+      <DependentUpon>DoAnTBao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DoAnTBao.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DoAnTBao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSignUp.Designer.cs">
+      <DependentUpon>FrmSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGioiThieuSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGioiThieuSV.Designer.cs">
+      <DependentUpon>FrmGioiThieuSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RptPrint_KhachHang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPrint_KhachHang.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptPrint_NhanVien.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPrint_NhanVien.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptPrint_SanPham.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPrint_SanPham.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rpt_print_LoaiSP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_print_LoaiSP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmprintLoaiSP.resx">
+      <DependentUpon>FrmprintLoaiSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrint_KhachHang.resx">
+      <DependentUpon>FrmPrint_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrint_NhanVien.resx">
+      <DependentUpon>FrmPrint_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrint_SanPham.resx">
+      <DependentUpon>FrmPrint_SanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print_HD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Print_HD.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChiTietHoaDon.resx">
+      <DependentUpon>FrmChiTietHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHoaDon.resx">
+      <DependentUpon>FrmHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKhachHang.resx">
+      <DependentUpon>FrmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNhanVien.resx">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrint.resx">
+      <DependentUpon>FrmPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSanPham.resx">
+      <DependentUpon>FrmSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSignUp.resx">
+      <DependentUpon>FrmSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGioiThieuSV.resx">
+      <DependentUpon>FrmGioiThieuSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoaiSP.resx">
+      <DependentUpon>LoaiSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPrint_KhachHang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPrint_KhachHang.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPrint_NhanVien.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPrint_NhanVien.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPrint_SanPham.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPrint_SanPham.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_print_LoaiSP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_print_LoaiSP.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DoAnTBao.xsc">
+      <DependentUpon>DoAnTBao.xsd</DependentUpon>
+    </None>
+    <None Include="DoAnTBao.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DoAnTBao.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DoAnTBao.xss">
+      <DependentUpon>DoAnTBao.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
